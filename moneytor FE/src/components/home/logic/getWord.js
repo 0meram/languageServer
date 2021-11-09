@@ -11,8 +11,6 @@ export const getWord = (code, lang) => {
 					<li key={index}>
 						{item.text}
 						{"   "}
-						{item.lang}
-						{"   "}
 						{item.wordCode}
 					</li>
 				);
