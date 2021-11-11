@@ -1,8 +1,8 @@
 import React from "react";
-import { wordsList } from "../../lib/wordsList";
 import Grid from "@material-ui/core/Grid";
+import { wordsList } from "../../lib/wordsList";
 
-export const getWord = (code, lang) => {
+export const getWord = (code) => {
 	const word = wordsList.filter((word) => word.text === code);
 	let outPut = (
 		<Grid>
