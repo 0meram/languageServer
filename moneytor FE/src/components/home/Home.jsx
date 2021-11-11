@@ -40,9 +40,12 @@ export default function Home() {
 
 	const sendWord = async () => {
 		setLoading(true);
-		const res = await axios.post("http://localhost:8000/search/send", {
-			wordToAdd,
-		});
+		const res = await axios.post(
+			"https://tranquil-forest-22449.herokuapp.com/search/send",
+			{
+				wordToAdd,
+			}
+		);
 		setTimeout(() => {
 			setLoading(false);
 		}, 800);
